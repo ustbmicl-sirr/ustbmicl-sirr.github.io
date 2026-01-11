@@ -6,49 +6,89 @@ sections:
   - block: markdown
     content:
       title: Research Areas
-      subtitle: Swarm Intelligence for Robotics and Beyond
+      subtitle: Swarm Intelligence Across Collaborative Scenarios
       text: |
-        Our research centers on applying swarm intelligence to robotics, with extensions to related application domains:
+        Our research explores swarm intelligence principles and their applications across diverse collaborative scenarios:
 
   - block: features
     content:
-      title: Core Robotics Research
+      title: Multi-Robot Systems
       items:
-        - name: Multi-Robot Cooperative SLAM
+        - name: Cooperative SLAM
           icon: robot
           icon_pack: fas
           description: |
-            Distributed simultaneous localization and mapping for robot swarms, enabling collaborative environment perception and map fusion.
+            Distributed simultaneous localization and mapping for robot teams, enabling collaborative environment perception and map fusion.
         - name: Autonomous Navigation
           icon: route
           icon_pack: fas
           description: |
-            Swarm-based path planning and navigation algorithms for robots operating in complex and dynamic environments.
-        - name: Robot Swarm Coordination
-          icon: users
+            Swarm-based path planning and navigation for robots in complex, dynamic, and unknown environments.
+        - name: Task Allocation
+          icon: tasks
           icon_pack: fas
           description: |
-            Bio-inspired coordination mechanisms for multi-robot task allocation, formation control, and collective behavior.
+            Bio-inspired algorithms for dynamic task distribution and load balancing among robot teams.
 
   - block: features
     content:
-      title: Extended Applications
+      title: Aerial & Mobile Swarms
       items:
-        - name: IoT & Edge Robotics
-          icon: network-wired
+        - name: UAV Swarm Coordination
+          icon: helicopter
           icon_pack: fas
           description: |
-            Integration of IoT sensors and edge computing for distributed robot perception and real-time decision making.
-        - name: Sim2Real Transfer
-          icon: sync
+            Formation control, collision avoidance, and mission planning for unmanned aerial vehicle swarms.
+        - name: Ground-Air Collaboration
+          icon: layer-group
           icon_pack: fas
           description: |
-            Domain adaptation techniques for transferring learned policies from simulation to real-world robot deployments.
-        - name: Explainable Robot Learning
-          icon: brain
+            Heterogeneous swarm systems combining ground robots and aerial vehicles for complex missions.
+        - name: Swarm Logistics
+          icon: truck
           icon_pack: fas
           description: |
-            Interpretable decision-making models for autonomous robots, enhancing transparency and trust in robot behavior.
+            Intelligent delivery and logistics optimization using swarm coordination strategies.
+
+  - block: features
+    content:
+      title: Networked Intelligence
+      items:
+        - name: Distributed Sensor Networks
+          icon: wifi
+          icon_pack: fas
+          description: |
+            Collaborative sensing and information fusion across large-scale sensor deployments.
+        - name: Edge Computing & IoT
+          icon: microchip
+          icon_pack: fas
+          description: |
+            Distributed computation and decision-making at the network edge for real-time swarm applications.
+        - name: Intelligent Transportation
+          icon: traffic-light
+          icon_pack: fas
+          description: |
+            Swarm intelligence for traffic optimization, connected vehicles, and smart mobility systems.
+
+  - block: features
+    content:
+      title: Human-Swarm Interaction
+      items:
+        - name: Human-Robot Collaboration
+          icon: handshake
+          icon_pack: fas
+          description: |
+            Intuitive interfaces and control mechanisms for humans to interact with and supervise robot swarms.
+        - name: Crowdsourcing Intelligence
+          icon: users
+          icon_pack: fas
+          description: |
+            Leveraging collective human intelligence combined with machine learning for complex problem solving.
+        - name: Explainable Swarm Behavior
+          icon: lightbulb
+          icon_pack: fas
+          description: |
+            Interpretable models for understanding and predicting collective swarm decisions.
 
   - block: markdown
     content:
@@ -58,9 +98,10 @@ sections:
 
         ## Research Philosophy
 
-        - **From Swarm to Robot**: Translating biological swarm intelligence into practical robotics algorithms
-        - **Simulation to Reality**: Bridging the gap between simulated environments and real-world robot deployment
-        - **Explainable AI**: Developing interpretable models for trustworthy autonomous systems
+        - **Bio-Inspired**: Drawing from nature's swarm systems (ants, bees, birds, fish)
+        - **Scalable**: From small teams to large-scale swarms
+        - **Robust**: Decentralized systems resilient to individual failures
+        - **Adaptive**: Self-organizing behavior in dynamic environments
 
         ---
 

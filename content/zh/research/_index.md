@@ -6,49 +6,89 @@ sections:
   - block: markdown
     content:
       title: 研究方向
-      subtitle: 面向机器人的群智能及其扩展应用
+      subtitle: 群智能在多元协作场景中的应用
       text: |
-        我们的研究以群智能在机器人领域的应用为核心，并扩展至相关应用领域：
+        我们的研究探索群智能原理及其在多样化协作场景中的应用：
 
   - block: features
     content:
-      title: 核心机器人研究
+      title: 多机器人系统
       items:
-        - name: 多机器人协同SLAM
+        - name: 协同SLAM
           icon: robot
           icon_pack: fas
           description: |
-            面向机器人群体的分布式同时定位与建图技术，实现协同环境感知与地图融合。
+            面向机器人团队的分布式同时定位与建图，实现协同环境感知与地图融合。
         - name: 自主导航
           icon: route
           icon_pack: fas
           description: |
-            基于群智能的路径规划与导航算法，适用于复杂动态环境中的机器人运动。
-        - name: 机器人群体协调
-          icon: users
+            基于群智能的路径规划与导航，适用于复杂、动态和未知环境。
+        - name: 任务分配
+          icon: tasks
           icon_pack: fas
           description: |
-            仿生协调机制，用于多机器人任务分配、编队控制与集体行为。
+            仿生算法实现机器人团队的动态任务分配与负载均衡。
 
   - block: features
     content:
-      title: 扩展应用
+      title: 空中与移动集群
       items:
-        - name: 物联网与边缘机器人
-          icon: network-wired
+        - name: 无人机集群协调
+          icon: helicopter
           icon_pack: fas
           description: |
-            集成物联网传感器与边缘计算，实现分布式机器人感知与实时决策。
-        - name: Sim2Real迁移
-          icon: sync
+            无人机集群的编队控制、避障与任务规划。
+        - name: 空地协同
+          icon: layer-group
           icon_pack: fas
           description: |
-            域适应技术，将仿真环境中学习的策略迁移到真实机器人部署。
-        - name: 可解释机器人学习
-          icon: brain
+            结合地面机器人与空中飞行器的异构集群系统，执行复杂任务。
+        - name: 集群物流
+          icon: truck
           icon_pack: fas
           description: |
-            可解释的自主机器人决策模型，提升机器人行为的透明度与可信度。
+            利用群智能协调策略优化智能配送与物流。
+
+  - block: features
+    content:
+      title: 网络化智能
+      items:
+        - name: 分布式传感器网络
+          icon: wifi
+          icon_pack: fas
+          description: |
+            大规模传感器部署中的协同感知与信息融合。
+        - name: 边缘计算与物联网
+          icon: microchip
+          icon_pack: fas
+          description: |
+            网络边缘的分布式计算与决策，支持实时群智能应用。
+        - name: 智能交通
+          icon: traffic-light
+          icon_pack: fas
+          description: |
+            群智能用于交通优化、车联网与智慧出行系统。
+
+  - block: features
+    content:
+      title: 人-群体交互
+      items:
+        - name: 人机协作
+          icon: handshake
+          icon_pack: fas
+          description: |
+            直观的交互界面与控制机制，使人类能够与机器人集群进行交互与监督。
+        - name: 众包智能
+          icon: users
+          icon_pack: fas
+          description: |
+            结合人类集体智慧与机器学习，解决复杂问题。
+        - name: 可解释集群行为
+          icon: lightbulb
+          icon_pack: fas
+          description: |
+            可解释模型，用于理解和预测集群集体决策。
 
   - block: markdown
     content:
@@ -58,9 +98,10 @@ sections:
 
         ## 研究理念
 
-        - **从群体到机器人**: 将生物群智能转化为实用的机器人算法
-        - **从仿真到现实**: 弥合仿真环境与真实机器人部署之间的差距
-        - **可解释AI**: 开发可信赖的自主系统可解释模型
+        - **仿生启发**: 借鉴自然界群体系统（蚁群、蜂群、鸟群、鱼群）
+        - **可扩展性**: 从小型团队到大规模集群
+        - **鲁棒性**: 去中心化系统，对个体故障具有弹性
+        - **自适应性**: 动态环境中的自组织行为
 
         ---
 

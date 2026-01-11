@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
 
-        **SIRR (Swarm Intelligence for Robotics Research)** focuses on applying swarm intelligence theories and algorithms to robotics applications. Our research spans multi-robot coordination, autonomous navigation, cooperative SLAM, and extends to related fields including IoT, edge computing, and intelligent transportation systems.
+        **SIRR (Swarm Intelligence for Robotics Research)** explores swarm intelligence theories and their applications across diverse collaborative scenarios. Our research spans multi-robot systems, UAV swarms, intelligent transportation, distributed sensor networks, and human-robot collaboration, aiming to enable intelligent collective behavior in complex real-world environments.
 
   - block: collection
     content:

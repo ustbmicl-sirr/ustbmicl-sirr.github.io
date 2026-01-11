@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
 
-        **SIRR (Swarm Intelligence for Robotics Research)** 专注于将群智能理论与算法应用于机器人领域。我们的研究涵盖多机器人协同、自主导航、协同SLAM，并扩展至物联网、边缘计算、智能交通等相关应用领域。
+        **SIRR (Swarm Intelligence for Robotics Research)** 探索群智能理论及其在多样化协作场景中的应用。我们的研究涵盖多机器人系统、无人机集群、智能交通、分布式传感器网络、人机协作等领域，旨在复杂真实环境中实现智能集体行为。
 
   - block: collection
     content:
