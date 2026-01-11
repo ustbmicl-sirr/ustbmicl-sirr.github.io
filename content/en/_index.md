@@ -7,14 +7,14 @@ sections:
   - block: hero
     content:
       title: |
-        Swarm Intelligence
-        Research Lab
+        SIRR
+        Swarm Intelligence for Robotics Research
       image:
         filename: welcome.jpg
       text: |
         <br>
 
-        **Swarm Intelligence Research Lab (SIRL)** focuses on cutting-edge research in swarm intelligence, multi-robot systems, and distributed cooperative control. We are dedicated to exploring the applications and innovations of collective intelligence in robot collaboration, multi-agent systems, and SLAM.
+        **SIRR (Swarm Intelligence for Robotics Research)** focuses on applying swarm intelligence theories and algorithms to robotics applications. Our research spans multi-robot coordination, autonomous navigation, cooperative SLAM, and extends to related fields including IoT, edge computing, and intelligent transportation systems.
 
   - block: collection
     content:

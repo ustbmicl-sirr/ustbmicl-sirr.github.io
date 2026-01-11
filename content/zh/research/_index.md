@@ -6,44 +6,49 @@ sections:
   - block: markdown
     content:
       title: 研究方向
-      subtitle: Research Areas
+      subtitle: 面向机器人的群智能及其扩展应用
       text: |
-        我们的研究专注于群智能与多机器人系统的前沿技术，主要包括以下方向：
+        我们的研究以群智能在机器人领域的应用为核心，并扩展至相关应用领域：
 
   - block: features
     content:
-      title: 核心研究领域
+      title: 核心机器人研究
       items:
-        - name: 群智能算法
-          icon: users
-          icon_pack: fas
-          description: |
-            研究蚁群优化、粒子群优化、蜂群算法等群体智能算法，探索其在机器人协同任务中的应用。
         - name: 多机器人协同SLAM
           icon: robot
           icon_pack: fas
           description: |
-            研究多机器人同时定位与建图技术，实现分布式环境感知与地图融合。
-        - name: 分布式协同控制
+            面向机器人群体的分布式同时定位与建图技术，实现协同环境感知与地图融合。
+        - name: 自主导航
+          icon: route
+          icon_pack: fas
+          description: |
+            基于群智能的路径规划与导航算法，适用于复杂动态环境中的机器人运动。
+        - name: 机器人群体协调
+          icon: users
+          icon_pack: fas
+          description: |
+            仿生协调机制，用于多机器人任务分配、编队控制与集体行为。
+
+  - block: features
+    content:
+      title: 扩展应用
+      items:
+        - name: 物联网与边缘机器人
           icon: network-wired
           icon_pack: fas
           description: |
-            探索多智能体分布式控制策略，实现群体协同运动规划与任务分配。
-        - name: 物联网与边缘计算
-          icon: cloud
+            集成物联网传感器与边缘计算，实现分布式机器人感知与实时决策。
+        - name: Sim2Real迁移
+          icon: sync
           icon_pack: fas
           description: |
-            结合IoT技术与边缘计算，构建智能群体感知与决策系统。
-        - name: 强化学习与群体决策
+            域适应技术，将仿真环境中学习的策略迁移到真实机器人部署。
+        - name: 可解释机器人学习
           icon: brain
           icon_pack: fas
           description: |
-            应用多智能体强化学习方法，解决复杂环境下的群体决策问题。
-        - name: 机器人集群仿真
-          icon: cubes
-          icon_pack: fas
-          description: |
-            开发大规模机器人集群仿真平台，验证群智能算法的有效性。
+            可解释的自主机器人决策模型，提升机器人行为的透明度与可信度。
 
   - block: markdown
     content:
@@ -51,13 +56,13 @@ sections:
       text: |
         ---
 
-        ## 研究特色
+        ## 研究理念
 
-        - **理论与应用结合**: 从群智能基础理论到实际机器人系统部署
-        - **跨学科交叉**: 融合人工智能、机器人学、控制理论、计算机视觉
-        - **开源共享**: 积极开源研究成果，推动学术交流
+        - **从群体到机器人**: 将生物群智能转化为实用的机器人算法
+        - **从仿真到现实**: 弥合仿真环境与真实机器人部署之间的差距
+        - **可解释AI**: 开发可信赖的自主系统可解释模型
 
         ---
 
-        如有合作意向，欢迎[联系我们](/contact/)。
+        如有合作意向，欢迎[联系我们](/zh/contact/)。
 ---

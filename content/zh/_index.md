@@ -1,5 +1,4 @@
 ---
-# Leave the homepage title empty to use the site title
 title:
 date: 2022-10-24
 type: landing
@@ -8,19 +7,19 @@ sections:
   - block: hero
     content:
       title: |
-        群智研究实验室
-        Swarm Intelligence Lab
+        SIRR
+        面向机器人的群智能研究
       image:
         filename: welcome.jpg
       text: |
         <br>
 
-        **群智研究实验室 (Swarm Intelligence Research Lab)** 专注于群智能、多机器人系统、分布式协同控制等前沿研究领域。我们致力于探索群体智能在机器人协同、多智能体系统、SLAM等方向的应用与创新。
+        **SIRR (Swarm Intelligence for Robotics Research)** 专注于将群智能理论与算法应用于机器人领域。我们的研究涵盖多机器人协同、自主导航、协同SLAM，并扩展至物联网、边缘计算、智能交通等相关应用领域。
 
   - block: collection
     content:
       title: 研究项目
-      subtitle: Research Projects
+      subtitle: ''
       text: ""
       count: 6
       filters:
@@ -53,7 +52,7 @@ sections:
   - block: collection
     content:
       title: 最新论文
-      subtitle: Recent Publications
+      subtitle: ''
       text: ""
       count: 5
       filters:

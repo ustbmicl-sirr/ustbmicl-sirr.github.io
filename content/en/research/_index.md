@@ -6,44 +6,49 @@ sections:
   - block: markdown
     content:
       title: Research Areas
-      subtitle: ''
+      subtitle: Swarm Intelligence for Robotics and Beyond
       text: |
-        Our research focuses on cutting-edge technologies in swarm intelligence and multi-robot systems, including the following directions:
+        Our research centers on applying swarm intelligence to robotics, with extensions to related application domains:
 
   - block: features
     content:
-      title: Core Research Areas
+      title: Core Robotics Research
       items:
-        - name: Swarm Intelligence Algorithms
-          icon: users
-          icon_pack: fas
-          description: |
-            Research on ant colony optimization, particle swarm optimization, bee colony algorithms, and their applications in robot collaboration tasks.
         - name: Multi-Robot Cooperative SLAM
           icon: robot
           icon_pack: fas
           description: |
-            Research on multi-robot simultaneous localization and mapping, achieving distributed environmental perception and map fusion.
-        - name: Distributed Cooperative Control
+            Distributed simultaneous localization and mapping for robot swarms, enabling collaborative environment perception and map fusion.
+        - name: Autonomous Navigation
+          icon: route
+          icon_pack: fas
+          description: |
+            Swarm-based path planning and navigation algorithms for robots operating in complex and dynamic environments.
+        - name: Robot Swarm Coordination
+          icon: users
+          icon_pack: fas
+          description: |
+            Bio-inspired coordination mechanisms for multi-robot task allocation, formation control, and collective behavior.
+
+  - block: features
+    content:
+      title: Extended Applications
+      items:
+        - name: IoT & Edge Robotics
           icon: network-wired
           icon_pack: fas
           description: |
-            Exploring multi-agent distributed control strategies for collaborative motion planning and task allocation.
-        - name: IoT and Edge Computing
-          icon: cloud
+            Integration of IoT sensors and edge computing for distributed robot perception and real-time decision making.
+        - name: Sim2Real Transfer
+          icon: sync
           icon_pack: fas
           description: |
-            Combining IoT technology with edge computing to build intelligent swarm perception and decision systems.
-        - name: Reinforcement Learning & Swarm Decision
+            Domain adaptation techniques for transferring learned policies from simulation to real-world robot deployments.
+        - name: Explainable Robot Learning
           icon: brain
           icon_pack: fas
           description: |
-            Applying multi-agent reinforcement learning methods to solve complex swarm decision-making problems.
-        - name: Robot Swarm Simulation
-          icon: cubes
-          icon_pack: fas
-          description: |
-            Developing large-scale robot swarm simulation platforms to validate swarm intelligence algorithms.
+            Interpretable decision-making models for autonomous robots, enhancing transparency and trust in robot behavior.
 
   - block: markdown
     content:
@@ -51,11 +56,11 @@ sections:
       text: |
         ---
 
-        ## Research Features
+        ## Research Philosophy
 
-        - **Theory and Application Integration**: From swarm intelligence theory to practical robot system deployment
-        - **Interdisciplinary**: Integrating AI, robotics, control theory, and computer vision
-        - **Open Source**: Actively open-sourcing research results to promote academic exchange
+        - **From Swarm to Robot**: Translating biological swarm intelligence into practical robotics algorithms
+        - **Simulation to Reality**: Bridging the gap between simulated environments and real-world robot deployment
+        - **Explainable AI**: Developing interpretable models for trustworthy autonomous systems
 
         ---
 

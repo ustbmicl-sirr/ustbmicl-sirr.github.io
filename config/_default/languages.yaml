@@ -6,14 +6,14 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: Swarm Intelligence Research Lab
+  title: SIRR - Swarm Intelligence for Robotics Research
   params:
-    description: 'Swarm Intelligence Research Lab - Research on swarm intelligence, multi-robot systems, and distributed cooperative control'
+    description: 'SIRR - Applying swarm intelligence to robotics: multi-robot coordination, autonomous navigation, cooperative SLAM, and extended applications'
 
 # Chinese
 zh:
   languageCode: zh-Hans
   contentDir: content/zh
-  title: 群智研究实验室
+  title: SIRR - 面向机器人的群智能研究
   params:
-    description: '群智研究实验室 - 专注于群智能、多机器人系统、分布式协同控制的研究'
+    description: 'SIRR - 将群智能应用于机器人领域：多机器人协同、自主导航、协同SLAM及扩展应用'

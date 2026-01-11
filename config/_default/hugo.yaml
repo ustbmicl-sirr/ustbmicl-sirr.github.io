@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Swarm Intelligence Research Lab # Website name
+title: SIRR - Swarm Intelligence for Robotics Research # Website name
 baseURL: 'https://ustbmicl-sirr.github.io/' # Website URL
 
 ############################
