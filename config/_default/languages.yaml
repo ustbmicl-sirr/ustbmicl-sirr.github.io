@@ -2,21 +2,18 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
+# Default language - English
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/en
+  title: Swarm Intelligence Research Lab
+  params:
+    description: 'Swarm Intelligence Research Lab - Research on swarm intelligence, multi-robot systems, and distributed cooperative control'
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# Chinese
+zh:
+  languageCode: zh-Hans
+  contentDir: content/zh
+  title: 群智研究实验室
+  params:
+    description: '群智研究实验室 - 专注于群智能、多机器人系统、分布式协同控制的研究'

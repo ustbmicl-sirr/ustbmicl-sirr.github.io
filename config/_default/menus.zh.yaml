@@ -1,0 +1,18 @@
+# 中文导航菜单
+
+main:
+  - name: 首页
+    url: /
+    weight: 10
+  - name: 研究方向
+    url: research
+    weight: 20
+  - name: 项目
+    url: project
+    weight: 30
+  - name: 论文发表
+    url: publication
+    weight: 40
+  - name: 联系我们
+    url: contact
+    weight: 50

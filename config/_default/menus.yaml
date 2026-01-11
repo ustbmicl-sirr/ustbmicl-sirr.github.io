@@ -3,19 +3,20 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+# English menu
 main:
-  - name: 首页
+  - name: Home
     url: /
     weight: 10
-  - name: 研究方向
+  - name: Research
     url: research
     weight: 20
-  - name: 项目
+  - name: Projects
     url: project
     weight: 30
-  - name: 论文发表
+  - name: Publications
     url: publication
     weight: 40
-  - name: 联系我们
+  - name: Contact
     url: contact
     weight: 50
