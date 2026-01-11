@@ -10,18 +10,12 @@ main:
   - name: 研究方向
     url: research
     weight: 20
-  - name: 团队成员
-    url: people
+  - name: 项目
+    url: project
     weight: 30
   - name: 论文发表
     url: publication
     weight: 40
-  - name: 动态新闻
-    url: post
-    weight: 50
-  - name: 学术活动
-    url: event
-    weight: 60
   - name: 联系我们
     url: contact
-    weight: 70
+    weight: 50

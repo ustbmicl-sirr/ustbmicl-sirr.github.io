@@ -16,26 +16,20 @@ sections:
         <br>
 
         **群智研究实验室 (Swarm Intelligence Research Lab)** 专注于群智能、多机器人系统、分布式协同控制等前沿研究领域。我们致力于探索群体智能在机器人协同、多智能体系统、SLAM等方向的应用与创新。
-  
+
   - block: collection
     content:
-      title: 最新动态
-      subtitle:
-      text:
-      count: 5
+      title: 研究项目
+      subtitle: Research Projects
+      text: ""
+      count: 6
       filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+        folders:
+          - project
     design:
       view: card
-      columns: '1'
-  
+      columns: '2'
+
   - block: markdown
     content:
       title:
@@ -44,7 +38,7 @@ sections:
     design:
       columns: '1'
       background:
-        image: 
+        image:
           filename: coders.jpg
           filters:
             brightness: 1
@@ -59,12 +53,12 @@ sections:
   - block: collection
     content:
       title: 最新论文
+      subtitle: Recent Publications
       text: ""
       count: 5
       filters:
         folders:
           - publication
-        publication_type: 'article'
     design:
       view: citation
       columns: '1'
@@ -74,7 +68,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="团队成员 →" %}}
+        {{% cta cta_link="./project/" cta_text="查看所有项目 →" %}}
     design:
       columns: '1'
 ---
