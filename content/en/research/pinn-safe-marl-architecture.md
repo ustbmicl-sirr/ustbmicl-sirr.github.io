@@ -191,10 +191,39 @@ class PINN_Safe_MARL_System:
 
 | Direction | Key Paper | Code |
 |-----------|-----------|------|
+| **PINN+Safe+MARL** | MAD-PINN (arXiv 2025) | [arXiv](https://arxiv.org/abs/2509.23960) |
 | PINN-CBF | Neural CBF from Zubov PDE (2024) | - |
 | Equivariant GNN | LEGO: Equivariant Graph Network (NeurIPS 2024) | [GitHub](https://github.com/dchen48/LEGO) |
 | Safe MARL | GCBF+ (ICRA 2024) | [MIT-REALM](https://github.com/MIT-REALM/gcbf-pytorch) |
-| Combined | Physics-Informed Safe Control (ICML 2025) | - |
+| Neural CBF | Safe Robust MARL with Neural CBFs (2024) | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0020025524014816) |
+
+### MAD-PINN: Decentralized Physics-Informed Multi-Agent Safe Control
+
+**Paper**: MAD-PINN: A Decentralized Physics-Informed Machine Learning Framework for Safe and Optimal Multi-Agent Control
+
+**Authors**: Manan Tayal, Aditya Singh, Shishir Kolathaya, Somil Bansal (2025)
+
+**Key Contributions**:
+- PINN-based solution for Multi-Agent State-Constrained Optimal Control Problem (MASC-OCP)
+- Epigraph reformulation unifying safety constraints and performance optimization
+- Decentralized architecture: train on small-scale, deploy on large-scale
+- Hamilton-Jacobi Reachability for neighbor selection
+
+**Technical Framework**:
+```
+MASC-OCP → Epigraph Reformulation → PINN Value Function → Decentralized Control
+                                          │
+                                          ├── Safety: boundary conditions
+                                          └── Performance: optimal control
+```
+
+**Relevance to Our Research**:
+| MAD-PINN | Our Framework |
+|:---|:---|
+| PINN solving HJB PDE | PINN Learning Paradigm |
+| State constraints / Safety | Manifold + CBF |
+| Decentralized multi-agent | MARL + Robots |
+| Scalability design | Factor Graph |
 
 ---
 

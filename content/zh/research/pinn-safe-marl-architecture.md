@@ -190,10 +190,39 @@ class PINN_Safe_MARL_System:
 
 | 方向 | 关键论文 | 代码 |
 |------|---------|------|
+| **PINN+Safe+MARL** | MAD-PINN (arXiv 2025) | [arXiv](https://arxiv.org/abs/2509.23960) |
 | PINN-CBF | Neural CBF from Zubov PDE (2024) | - |
 | Equivariant GNN | LEGO: Equivariant Graph Network (NeurIPS 2024) | [GitHub](https://github.com/dchen48/LEGO) |
 | Safe MARL | GCBF+ (ICRA 2024) | [MIT-REALM](https://github.com/MIT-REALM/gcbf-pytorch) |
-| 综合 | Physics-Informed Safe Control (ICML 2025) | - |
+| Neural CBF | Safe Robust MARL with Neural CBFs (2024) | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0020025524014816) |
+
+### MAD-PINN: 去中心化物理信息多智能体安全控制
+
+**论文**: MAD-PINN: A Decentralized Physics-Informed Machine Learning Framework for Safe and Optimal Multi-Agent Control
+
+**作者**: Manan Tayal, Aditya Singh, Shishir Kolathaya, Somil Bansal (2025)
+
+**核心贡献**:
+- 使用 PINN 求解多智能体状态约束最优控制问题 (MASC-OCP)
+- Epigraph 重构将安全约束和性能优化统一
+- 去中心化架构：小规模训练，大规模部署
+- Hamilton-Jacobi Reachability 用于邻居选择
+
+**技术框架**:
+```
+MASC-OCP → Epigraph Reformulation → PINN Value Function → Decentralized Control
+                                          │
+                                          ├── Safety: boundary conditions
+                                          └── Performance: optimal control
+```
+
+**与本研究关联**:
+| MAD-PINN | 本框架对应 |
+|:---|:---|
+| PINN 求解 HJB PDE | PINN 学习范式 |
+| 状态约束/安全保证 | Manifold + CBF |
+| 去中心化多智能体 | MARL + Robots |
+| 可扩展性设计 | Factor Graph |
 
 ---
 
