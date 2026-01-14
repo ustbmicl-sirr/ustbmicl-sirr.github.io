@@ -12,6 +12,18 @@ math: true
 
 ---
 
+## 交互式可视化工具
+
+**强烈推荐**：打开下面的交互式工具，可以：
+- 拖动滑块改变切片位置
+- 实时看到内外半径变化
+- 查看垫圈截面形状
+- 3D预览旋转体效果
+
+<a href="/js/washer-method-viz.html" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 10px 0;">打开交互式可视化工具</a>
+
+---
+
 ## 一、什么是垫圈法？（通俗理解）
 
 ### 生活中的例子
