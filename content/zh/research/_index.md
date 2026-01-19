@@ -5,140 +5,187 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 研究方向
-      subtitle: 群智能与多智能体系统
+      title: 🎉 最新成果
       text: |
-        ## 研究架构
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; color: white; margin-bottom: 2rem;">
+          <h3 style="color: white; margin-top: 0;">📄 论文录用</h3>
+          <p style="font-size: 1.1em; font-weight: 500; margin-bottom: 1rem;">
+            <strong>HIERARCHICAL MARL FOR TASK ALLOCATION: DISTRIBUTED SUBTASK SELECTION WITH MUTUAL INFORMATION</strong>
+          </p>
+          <p style="margin-bottom: 0.5rem;">
+            ✅ 已被 <strong>IEEE ICASSP 2026</strong> 录用
+          </p>
+          <p style="margin-bottom: 0.5rem;">
+            📅 会议时间：2026年5月3-8日
+          </p>
+          <p style="margin-bottom: 0;">
+            📍 会议地点：西班牙巴塞罗那
+          </p>
+        </div>
 
-        ```
-        ┌────────────────────────────────────────┐      ┌────────────────────────────────┐
-        │         关键技术层 Core Technologies    │      │    学习范式层 Learning Paradigms│
-        ├────────────────────────────────────────┤      ├────────────────────────────────┤
-        │                                        │      │                                │
-        │  MARL + Robots    Swarm Intelligence   │      │  PINN         Federated RL     │
-        │  ────────────     ──────────────────   │      │  物理信息NN    联邦强化学习     │
-        │                                        │      │                                │
-        │  • Factor Graph   • Bio-inspired       │ ───► │  Human-in-Loop    Sim2Real     │
-        │    因子图           仿生算法           │      │  人在环           仿真到实际   │
-        │                                        │      │                                │
-        │  • Equivariant    • Consensus          │      └────────────────────────────────┘
-        │    GNN 等变GNN      一致性协议         │
-        │                                        │
-        │  • Manifold       • Mean Field         │
-        │    流形             平均场             │
-        │                                        │
-        └────────────────────────────────────────┘
-        ```
-
-        ---
-
-  - block: markdown
-    content:
-      title: "🤖 MARL + Robots"
-      text: |
-        | 研究任务 | 核心问题 |
-        |:---|:---|
-        | **协同定位 (Localization)**: 多机器人/无人机分布式定位、SLAM | 传感器噪声、通信延迟、数据融合 |
-        | **协作导航 (Navigation)**: 路径规划、避障、编队控制 | 动态环境、安全约束、实时性 |
-        | **协同寻源 (Source Seeking)**: 目标搜索、信号源定位、环境监测 | 稀疏观测、不确定性、Sim2Real |
-
-        **关键技术:** MARL + 优化算法
+        <p style="text-align: center; color: #666; font-size: 0.9em;">
+          <em>ICASSP 是世界上最大、最全面的专注于信号处理及其应用的技术会议</em>
+        </p>
 
   - block: features
     content:
-      title: ""
+      title: 三大研究方向
+      text: 点击卡片查看详情
       items:
-        - name: 因子图 (Factor Graph)
-          icon: project-diagram
+        - name: MARL + Robots
+          icon: robot
           icon_pack: fas
           description: |
-            基于因子图的概率推理与优化，结合自注意力因子图神经网络(SA-FGNN)实现多智能体协同定位与目标跟踪。
-        - name: 等变GNN (Equivariant GNN)
-          icon: brain
-          icon_pack: fas
-          description: |
-            E(n)-等变图神经网络编码多智能体几何关系，保证策略对平移、旋转、排列的对称性。
-        - name: 流形 (Manifold)
-          icon: globe
-          icon_pack: fas
-          description: |
-            基于流形几何的安全约束建模，结合CBF实现安全控制与几何优化。
+            **多机器人主动协同决策**
 
-  - block: markdown
-    content:
-      title: "🐝 Swarm Intelligence"
-      text: |
-        | 研究任务 | 核心问题 |
-        |:---|:---|
-        | **涌现行为 (Emergent Behavior)**: 从简单规则产生复杂集体行为 | 行为设计、可预测性、稳定性分析 |
-        | **自组织协调 (Self-Organization)**: 无中心化的群体决策与任务分配 | 局部通信、全局收敛、可扩展性 |
-        | **群体智能优化 (Swarm Optimization)**: 大规模智能体协同搜索与优化 | 计算复杂度、收敛速度、多目标权衡 |
+            面向无人机编队、仓储AGV、搜救机器人等场景，研究多机器人在通信受限、动态变化环境中的协同定位、导航与寻源问题。
 
-        **关键技术:** 行为树 + 仿生算法
+            **关键技术**：因子图+时序GNN状态表征、协调图奖励分配、Safe MARL+PINN安全保证、Sim2Real迁移部署
 
-  - block: features
-    content:
-      title: ""
-      items:
-        - name: 行为树 (Behavior Tree)
-          icon: sitemap
+            [查看详情](#marl-robots)
+        - name: Swarm Intelligence
+          icon: bugs
           icon_pack: fas
           description: |
-            模块化行为建模框架，支持复杂行为的组合、复用与动态切换，实现可解释的涌现行为设计。
-        - name: 仿生算法 (Bio-inspired)
-          icon: bug
-          icon_pack: fas
-          description: |
-            蚁群优化(ACO)、粒子群优化(PSO)、蜂群算法等自然启发的分布式优化与涌现行为方法。
-        - name: 一致性协议 (Consensus)
-          icon: sync-alt
-          icon_pack: fas
-          description: |
-            分布式一致性算法，实现自组织、间接协调(Stigmergy)与全局收敛。
+            **群体智能与涌现行为**
 
-  - block: markdown
-    content:
-      title: "⚙️ 学习范式"
-      text: |
-        **跨领域的学习方法与训练框架**：
+            借鉴蚁群、蜂群等自然群体的协作机制，研究如何从简单局部规则涌现复杂集体行为，实现无中心化的自组织协调。
 
-  - block: features
-    content:
-      title: ""
-      items:
-        - name: PINN (物理信息神经网络)
-          icon: atom
-          icon_pack: fas
-          description: |
-            将物理定律(PDE/ODE)嵌入神经网络，实现数据高效的动力学建模与安全约束学习(Zubov PDE → CBF)。
-        - name: 联邦强化学习 (Federated RL)
+            **关键技术**：行为树模块化建模、仿生优化算法(ACO/PSO)、分布式一致性协议、Mean Field大规模近似
+
+            [查看详情](#swarm-intelligence)
+        - name: 智慧 IoT
           icon: network-wired
           icon_pack: fas
           description: |
-            分布式、隐私保护的多智能体训练框架，支持异构数据与去中心化学习。
-        - name: 人在环 (Human-in-Loop)
-          icon: user-cog
-          icon_pack: fas
-          description: |
-            人机协作的交互式学习，结合人类反馈优化群体控制策略。
-        - name: Sim2Real (仿真到实际)
-          icon: exchange-alt
-          icon_pack: fas
-          description: |
-            域随机化与域自适应技术，实现从仿真环境到真实机器人的策略迁移。
+            **大模型协同推理**
+
+            针对边缘设备资源受限的挑战，研究大模型在分布式环境下的高效部署与隐私保护推理，实现计算资源的群智协同。
+
+            **关键技术**：模型压缩与量化、边缘-云分裂推理、联邦学习隐私保护、动态任务卸载调度
+
+            [查看详情](#智慧-iot)
+
+  - block: markdown
+    id: marl-robots
+    content:
+      title: ""
+      text: |
+        ---
+        ## 🤖 MARL + Robots
+
+        **多机器人主动协同决策**：让机器人群体在不确定环境中自主做出最优决策
+
+        > 核心问题：如何让多个机器人在**通信受限**、**观测不完全**、**动态变化**的环境中，通过**分布式学习**实现**安全高效**的协同决策？
+
+        | 任务 | 场景 | 核心挑战 |
+        |:---:|:---|:---|
+        | **协同定位** | 无人机编队、GPS拒止、协作SLAM | 传感器噪声 · 通信延迟 · 异构融合 |
+        | **协作导航** | 编队控制、仓储AGV、动态避障 | 安全约束 · 死锁避免 · 可扩展性 |
+        | **协同寻源** | 气体泄漏检测、搜救、信号追踪 | 稀疏观测 · 探索利用 · 环境复杂 |
+
+        <details>
+        <summary><strong>🔧 关键技术</strong></summary>
+
+        - **因子图 + 时序GNN**：多机器人时空关系表征与联合状态估计
+        - **协调图 + 奖励分配**：值分解与因子图消息传递实现信用分配
+        - **Safe MARL + PINN + CBF**：物理约束学习与安全保证
+        - **Sim2Real**：域随机化 · 系统辨识 · 渐进式部署
+
+        </details>
+
+        <details>
+        <summary><strong>📚 参考工作</strong></summary>
+
+        - **phMARL** (TRO 2025): Port-Hamiltonian 物理信息 MARL
+        - **GCBF+** (CoRL 2023): GNN + CBF 可扩展安全控制
+        - **MAD-PINN** (2025): PINN 求解分布式微分博弈
+
+        </details>
+
+  - block: markdown
+    id: swarm-intelligence
+    content:
+      title: ""
+      text: |
+        ---
+        ## 🐝 Swarm Intelligence
+
+        **群体智能**：从简单个体规则涌现复杂集体行为
+
+        > 核心问题：如何设计简单的局部规则，使群体在**无中心控制**下涌现出**可预测**、**可扩展**、**鲁棒**的集体智能行为？
+
+        | 任务 | 场景 | 核心挑战 |
+        |:---:|:---|:---|
+        | **涌现行为** | 群体聚集/分散、集体迁移、协同捕食 | 规则设计 · 可预测性 · 稳定性 |
+        | **自组织协调** | 任务分配、编队重构、负载均衡 | 局部信息 · 冲突解决 · 收敛性 |
+        | **群体优化** | 组合优化、神经架构搜索、路径规划 | 高维空间 · 多模态 · 动态目标 |
+
+        <details>
+        <summary><strong>🔧 关键技术</strong></summary>
+
+        - **行为树 (Behavior Tree)**：模块化行为建模，可与LLM结合
+        - **仿生算法**：ACO · PSO · 蜂群算法，模拟自然群体行为
+        - **一致性协议**：无中心化分布式一致性，理论保证收敛
+
+        </details>
+
+        <details>
+        <summary><strong>📚 参考工作</strong></summary>
+
+        - **MRBTP** (AAAI 2025): 多机器人行为树规划
+        - **IKT-BT** (T-Cyber 2025): 通信窃听实现间接知识迁移
+        - **Mean Field MARL**: 大规模群体的平均场近似
+
+        </details>
+
+  - block: markdown
+    id: intelligent-iot
+    content:
+      title: ""
+      text: |
+        ---
+        ## 📡 智慧 IoT
+
+        **大模型优化与协同推理**：群智在边缘计算场景的应用
+
+        > 核心问题：如何在**资源受限**的边缘设备上实现**高效**、**隐私保护**的大模型推理与协同学习？
+
+        | 任务 | 场景 | 核心挑战 |
+        |:---:|:---|:---|
+        | **大模型优化** | 移动端LLM、嵌入式AI、实时推理 | 模型规模 · 计算密集 · 精度损失 |
+        | **模型分裂推理** | 边缘-云协同、隐私敏感应用 | 分割决策 · 通信瓶颈 · 隐私泄露 |
+        | **联邦学习** | 跨机构医疗AI、分布式机器人学习 | Non-IID · 通信效率 · 拜占庭攻击 |
+
+        <details>
+        <summary><strong>🔧 关键技术</strong></summary>
+
+        - **模型分裂**：大模型分割到多设备协同推理
+        - **边缘-云协同**：动态任务卸载与资源调度
+        - **联邦学习**：数据不出本地，支持异构数据和设备
+
+        </details>
+
+        <details>
+        <summary><strong>🔗 与群智的联系</strong></summary>
+
+        智慧IoT = **计算资源的群智协同**：分布式计算节点通过协作实现高效推理
+
+        </details>
 
   - block: markdown
     content:
-      title:
+      title: 研究理念
       text: |
-        ---
+        **群智 (Swarm Intelligence)** 是贯穿三大方向的核心理念：
 
-        ## 研究理念
+        | 方向 | 群智体现 |
+        |:---|:---|
+        | **MARL + Robots** | 物理世界的群智 — 多机器人协同 |
+        | **Swarm Intelligence** | 自然界的群智 — 涌现行为 |
+        | **智慧 IoT** | 计算资源的群智 — 协同推理 |
 
-        - **仿生启发**: 借鉴自然界群体系统
-        - **可扩展性**: 从小规模到大规模集群
-        - **鲁棒性**: 去中心化、容错设计
-        - **自适应性**: 动态环境中的自组织
+        **共同特点**：分布式协作 · 涌现智能 · 可扩展性 · 鲁棒性
 
         ---
 

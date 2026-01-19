@@ -5,140 +5,187 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: Research Areas
-      subtitle: Swarm Intelligence & Multi-Agent Systems
+      title: 🎉 Latest Achievement
       text: |
-        ## Research Architecture
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; color: white; margin-bottom: 2rem;">
+          <h3 style="color: white; margin-top: 0;">📄 Paper Acceptance</h3>
+          <p style="font-size: 1.1em; font-weight: 500; margin-bottom: 1rem;">
+            <strong>HIERARCHICAL MARL FOR TASK ALLOCATION: DISTRIBUTED SUBTASK SELECTION WITH MUTUAL INFORMATION</strong>
+          </p>
+          <p style="margin-bottom: 0.5rem;">
+            ✅ Accepted by <strong>IEEE ICASSP 2026</strong>
+          </p>
+          <p style="margin-bottom: 0.5rem;">
+            📅 Conference Date: May 3-8, 2026
+          </p>
+          <p style="margin-bottom: 0;">
+            📍 Location: Barcelona, Spain
+          </p>
+        </div>
 
-        ```
-        ┌────────────────────────────────────────┐      ┌────────────────────────────────┐
-        │           Core Technologies            │      │       Learning Paradigms       │
-        ├────────────────────────────────────────┤      ├────────────────────────────────┤
-        │                                        │      │                                │
-        │  MARL + Robots    Swarm Intelligence   │      │  PINN         Federated RL     │
-        │  ────────────     ──────────────────   │      │  Physics-Inf  Distributed      │
-        │                                        │      │                                │
-        │  • Factor Graph   • Bio-inspired       │ ───► │  Human-in-Loop    Sim2Real     │
-        │    Probabilistic    ACO/PSO/Bee        │      │  Interactive      Transfer     │
-        │                                        │      │                                │
-        │  • Equivariant    • Consensus          │      └────────────────────────────────┘
-        │    GNN              Distributed        │
-        │                                        │
-        │  • Manifold       • Mean Field         │
-        │    Safety/CBF       Large-scale        │
-        │                                        │
-        └────────────────────────────────────────┘
-        ```
-
-        ---
-
-  - block: markdown
-    content:
-      title: "MARL + Robots"
-      text: |
-        | Research Tasks | Core Problems |
-        |:---|:---|
-        | **Cooperative Localization**: Multi-robot/UAV distributed localization, SLAM | Sensor noise, communication delay, data fusion |
-        | **Collaborative Navigation**: Path planning, obstacle avoidance, formation control | Dynamic environments, safety constraints, real-time |
-        | **Cooperative Source Seeking**: Target search, signal source localization, environmental monitoring | Sparse observations, uncertainty, Sim2Real |
-
-        **Key Technologies:** MARL + Optimization Algorithms
+        <p style="text-align: center; color: #666; font-size: 0.9em;">
+          <em>ICASSP is the world's largest and most comprehensive technical conference focused on signal processing and its applications</em>
+        </p>
 
   - block: features
     content:
-      title: ""
+      title: Three Research Directions
+      text: Click cards for details
       items:
-        - name: Factor Graph
-          icon: project-diagram
+        - name: MARL + Robots
+          icon: robot
           icon_pack: fas
           description: |
-            Probabilistic inference and optimization based on factor graphs, combined with Self-Attention Factor Graph Neural Networks (SA-FGNN) for multi-agent cooperative localization and target tracking.
-        - name: Equivariant GNN
-          icon: brain
-          icon_pack: fas
-          description: |
-            E(n)-equivariant graph neural networks encoding multi-agent geometric relations, ensuring policy symmetry under translation, rotation, and permutation.
-        - name: Manifold
-          icon: globe
-          icon_pack: fas
-          description: |
-            Manifold geometry-based safety constraint modeling, combined with CBF for safe control and geometric optimization.
+            **Multi-Robot Active Decision-Making**
 
-  - block: markdown
-    content:
-      title: "Swarm Intelligence"
-      text: |
-        | Research Tasks | Core Problems |
-        |:---|:---|
-        | **Emergent Behavior**: Complex collective behavior from simple rules | Behavior design, predictability, stability analysis |
-        | **Self-Organization**: Decentralized swarm decision-making and task allocation | Local communication, global convergence, scalability |
-        | **Swarm Optimization**: Large-scale agent collaborative search and optimization | Computational complexity, convergence speed, multi-objective trade-offs |
+            Targeting UAV swarms, warehouse AGVs, and search-and-rescue robots, we study cooperative localization, navigation, and source seeking in communication-limited, dynamic environments.
 
-        **Key Technologies:** Behavior Trees + Bio-inspired Algorithms
+            **Key Tech**: Factor Graph + Temporal GNN, Coordination Graph Credit Assignment, Safe MARL + PINN, Sim2Real Transfer
 
-  - block: features
-    content:
-      title: ""
-      items:
-        - name: Behavior Trees
-          icon: sitemap
+            [View Details](#marl-robots)
+        - name: Swarm Intelligence
+          icon: bugs
           icon_pack: fas
           description: |
-            Modular behavior modeling framework supporting complex behavior composition, reuse, and dynamic switching for interpretable emergent behavior design.
-        - name: Bio-inspired Algorithms
-          icon: bug
-          icon_pack: fas
-          description: |
-            Nature-inspired methods including ACO, PSO, and Bee algorithms for distributed optimization and emergent behavior.
-        - name: Consensus Protocols
-          icon: sync-alt
-          icon_pack: fas
-          description: |
-            Distributed consensus algorithms for self-organization, stigmergy-based coordination, and global convergence.
+            **Emergent Collective Behavior**
 
-  - block: markdown
-    content:
-      title: "Learning Paradigms"
-      text: |
-        **Cross-domain learning methods and training frameworks**:
+            Inspired by ant colonies and bee swarms, we study how complex collective behaviors emerge from simple local rules, enabling decentralized self-organization.
 
-  - block: features
-    content:
-      title: ""
-      items:
-        - name: PINN (Physics-Informed NN)
-          icon: atom
-          icon_pack: fas
-          description: |
-            Embedding physical laws (PDE/ODE) into neural networks for data-efficient dynamics modeling and safety constraint learning (Zubov PDE to CBF).
-        - name: Federated RL
+            **Key Tech**: Behavior Tree Modeling, Bio-inspired Algorithms (ACO/PSO), Distributed Consensus Protocols, Mean Field Approximation
+
+            [View Details](#swarm-intelligence)
+        - name: Intelligent IoT
           icon: network-wired
           icon_pack: fas
           description: |
-            Distributed, privacy-preserving multi-agent training framework supporting heterogeneous data and decentralized learning.
-        - name: Human-in-Loop
-          icon: user-cog
-          icon_pack: fas
-          description: |
-            Interactive learning with human-machine collaboration, optimizing swarm control policies through human feedback.
-        - name: Sim2Real Transfer
-          icon: exchange-alt
-          icon_pack: fas
-          description: |
-            Domain randomization and domain adaptation techniques for policy transfer from simulation to real robots.
+            **LLM Collaborative Inference**
+
+            Addressing resource constraints on edge devices, we study efficient deployment and privacy-preserving inference of large models in distributed environments.
+
+            **Key Tech**: Model Compression & Quantization, Edge-Cloud Split Inference, Federated Learning, Dynamic Task Offloading
+
+            [View Details](#intelligent-iot)
+
+  - block: markdown
+    id: marl-robots
+    content:
+      title: ""
+      text: |
+        ---
+        ## 🤖 MARL + Robots
+
+        **Multi-Robot Active Collaborative Decision-Making**: Enabling robot swarms to make optimal decisions autonomously in uncertain environments
+
+        > Core Question: How to enable multiple robots to achieve **safe** and **efficient** collaborative decisions through **distributed learning** in environments with **limited communication**, **partial observations**, and **dynamic changes**?
+
+        | Task | Scenarios | Core Challenges |
+        |:---:|:---|:---|
+        | **Cooperative Localization** | UAV swarms, GPS-denied, cooperative SLAM | Sensor noise · Comm delay · Heterogeneous fusion |
+        | **Collaborative Navigation** | Formation control, warehouse AGV, dynamic avoidance | Safety constraints · Deadlock · Scalability |
+        | **Cooperative Source Seeking** | Gas leak detection, search & rescue, signal tracking | Sparse observations · Exploration-exploitation · Complexity |
+
+        <details>
+        <summary><strong>🔧 Key Technologies</strong></summary>
+
+        - **Factor Graph + Temporal GNN**: Spatio-temporal representation and joint state estimation
+        - **Coordination Graph + Credit Assignment**: Value decomposition via factor graph message passing
+        - **Safe MARL + PINN + CBF**: Physics-constrained learning with safety guarantees
+        - **Sim2Real**: Domain randomization · System ID · Progressive deployment
+
+        </details>
+
+        <details>
+        <summary><strong>📚 References</strong></summary>
+
+        - **phMARL** (TRO 2025): Port-Hamiltonian physics-informed MARL
+        - **GCBF+** (CoRL 2023): GNN + CBF scalable safe control
+        - **MAD-PINN** (2025): PINN for distributed differential games
+
+        </details>
+
+  - block: markdown
+    id: swarm-intelligence
+    content:
+      title: ""
+      text: |
+        ---
+        ## 🐝 Swarm Intelligence
+
+        **Emergent Collective Behavior**: Complex collective behavior emerging from simple individual rules
+
+        > Core Question: How to design simple local rules that enable swarms to exhibit **predictable**, **scalable**, and **robust** collective intelligence **without centralized control**?
+
+        | Task | Scenarios | Core Challenges |
+        |:---:|:---|:---|
+        | **Emergent Behavior** | Aggregation/dispersion, migration, cooperative hunting | Rule design · Predictability · Stability |
+        | **Self-Organization** | Task allocation, formation reconfiguration, load balancing | Local info · Conflict resolution · Convergence |
+        | **Swarm Optimization** | Combinatorial optimization, NAS, path planning | High-dim · Multi-modal · Dynamic objectives |
+
+        <details>
+        <summary><strong>🔧 Key Technologies</strong></summary>
+
+        - **Behavior Trees**: Modular behavior modeling, LLM integration possible
+        - **Bio-inspired Algorithms**: ACO · PSO · Bee algorithms for distributed optimization
+        - **Consensus Protocols**: Decentralized consensus with convergence guarantees
+
+        </details>
+
+        <details>
+        <summary><strong>📚 References</strong></summary>
+
+        - **MRBTP** (AAAI 2025): Multi-robot behavior tree planning
+        - **IKT-BT** (T-Cyber 2025): Indirect knowledge transfer via eavesdropping
+        - **Mean Field MARL**: Mean field approximation for large swarms
+
+        </details>
+
+  - block: markdown
+    id: intelligent-iot
+    content:
+      title: ""
+      text: |
+        ---
+        ## 📡 Intelligent IoT
+
+        **LLM Optimization & Collaborative Inference**: Swarm Intelligence applied to edge computing
+
+        > Core Question: How to achieve **efficient**, **privacy-preserving** LLM inference and collaborative learning on **resource-constrained** edge devices?
+
+        | Task | Scenarios | Core Challenges |
+        |:---:|:---|:---|
+        | **LLM Optimization** | Mobile LLM, embedded AI, real-time inference | Model scale · Compute intensive · Accuracy loss |
+        | **Split Inference** | Edge-cloud collaboration, privacy-sensitive apps | Split decision · Comm bottleneck · Privacy leakage |
+        | **Federated Learning** | Cross-institutional medical AI, distributed robot learning | Non-IID · Comm efficiency · Byzantine attacks |
+
+        <details>
+        <summary><strong>🔧 Key Technologies</strong></summary>
+
+        - **Model Splitting**: Partition large models across devices for collaborative inference
+        - **Edge-Cloud Collaboration**: Dynamic task offloading and resource scheduling
+        - **Federated Learning**: Data stays local, supports heterogeneous data and devices
+
+        </details>
+
+        <details>
+        <summary><strong>🔗 Connection to Swarm Intelligence</strong></summary>
+
+        Intelligent IoT = **Swarm Intelligence of Computing Resources**: Distributed compute nodes achieve efficient inference through collaboration
+
+        </details>
 
   - block: markdown
     content:
-      title:
+      title: Research Philosophy
       text: |
-        ---
+        **Swarm Intelligence** is the core concept unifying all three directions:
 
-        ## Research Philosophy
+        | Direction | Swarm Aspect |
+        |:---|:---|
+        | **MARL + Robots** | Swarm Intelligence in the physical world — Multi-robot coordination |
+        | **Swarm Intelligence** | Swarm Intelligence in nature — Emergent behavior |
+        | **Intelligent IoT** | Swarm Intelligence in computing — Collaborative inference |
 
-        - **Bio-Inspired**: Drawing from nature's swarm systems
-        - **Scalable**: From small teams to large-scale swarms
-        - **Robust**: Decentralized, fault-tolerant design
-        - **Adaptive**: Self-organizing in dynamic environments
+        **Common Characteristics**: Distributed Collaboration · Emergent Intelligence · Scalability · Robustness
 
         ---
 
