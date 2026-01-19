@@ -1,9 +1,184 @@
-// Make page header alignment consistent with widget page header alignment
+/*************************************************
+ *  Academic Website Styling
+ *************************************************/
+
+// Typography improvements for academic style
+body {
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+// Headings with better hierarchy
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.35;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+// Paragraph spacing
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+// Make page header alignment consistent
 .universal-wrapper h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 // Center the CTA shortcode button
 .cta-group {
   justify-content: center;
+}
+
+// Features card styling - refined for academic look
+.wg-features {
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+  }
+
+  .feature-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #37474f;
+  }
+
+  .feature-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #546e7a;
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    strong {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #263238;
+    }
+
+    a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #2962ff;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+
+      &:hover {
+        border-bottom-color: #2962ff;
+      }
+    }
+  }
+}
+
+// Publication list styling
+.pub-list-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+
+  .article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: #263238;
+      text-decoration: none;
+
+      &:hover {
+        color: #2962ff;
+      }
+    }
+  }
+
+  .article-metadata {
+    font-size: 0.9rem;
+    color: #546e7a;
+    line-height: 1.6;
+  }
+}
+
+// Hero section refinement
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #546e7a;
+}
+
+// Blockquote styling for announcements
+blockquote {
+  border-left: 4px solid #2962ff;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #f5f5f5;
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  strong {
+    color: #2962ff;
+    font-weight: 600;
+  }
+}
+
+// Card styling
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+}
+
+// Navigation improvements
+.navbar {
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+// Footer styling
+.site-footer {
+  font-size: 0.85rem;
+  color: #78909c;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #e0e0e0;
 }
