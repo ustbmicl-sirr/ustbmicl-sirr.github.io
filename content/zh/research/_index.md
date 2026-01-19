@@ -5,27 +5,15 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 🎉 最新成果
+      title: ""
       text: |
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; color: white; margin-bottom: 2rem;">
-          <h3 style="color: white; margin-top: 0;">📄 论文录用</h3>
-          <p style="font-size: 1.1em; font-weight: 500; margin-bottom: 1rem;">
-            <strong>HIERARCHICAL MARL FOR TASK ALLOCATION: DISTRIBUTED SUBTASK SELECTION WITH MUTUAL INFORMATION</strong>
-          </p>
-          <p style="margin-bottom: 0.5rem;">
-            ✅ 已被 <strong>IEEE ICASSP 2026</strong> 录用
-          </p>
-          <p style="margin-bottom: 0.5rem;">
-            📅 会议时间：2026年5月3-8日
-          </p>
-          <p style="margin-bottom: 0;">
-            📍 会议地点：西班牙巴塞罗那
-          </p>
-        </div>
+        > **📢 最新消息** | 我们的论文被 **IEEE ICASSP 2026** 录用！
+        >
+        > **Hierarchical MARL for Task Allocation: Distributed Subtask Selection with Mutual Information**
+        >
+        > 📅 2026年5月3-8日 · 📍 西班牙巴塞罗那
 
-        <p style="text-align: center; color: #666; font-size: 0.9em;">
-          <em>ICASSP 是世界上最大、最全面的专注于信号处理及其应用的技术会议</em>
-        </p>
+        ---
 
   - block: features
     content:

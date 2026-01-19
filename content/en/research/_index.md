@@ -5,27 +5,15 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 🎉 Latest Achievement
+      title: ""
       text: |
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; color: white; margin-bottom: 2rem;">
-          <h3 style="color: white; margin-top: 0;">📄 Paper Acceptance</h3>
-          <p style="font-size: 1.1em; font-weight: 500; margin-bottom: 1rem;">
-            <strong>HIERARCHICAL MARL FOR TASK ALLOCATION: DISTRIBUTED SUBTASK SELECTION WITH MUTUAL INFORMATION</strong>
-          </p>
-          <p style="margin-bottom: 0.5rem;">
-            ✅ Accepted by <strong>IEEE ICASSP 2026</strong>
-          </p>
-          <p style="margin-bottom: 0.5rem;">
-            📅 Conference Date: May 3-8, 2026
-          </p>
-          <p style="margin-bottom: 0;">
-            📍 Location: Barcelona, Spain
-          </p>
-        </div>
+        > **📢 Latest News** | Our paper accepted by **IEEE ICASSP 2026**!
+        >
+        > **Hierarchical MARL for Task Allocation: Distributed Subtask Selection with Mutual Information**
+        >
+        > 📅 May 3-8, 2026 · 📍 Barcelona, Spain
 
-        <p style="text-align: center; color: #666; font-size: 0.9em;">
-          <em>ICASSP is the world's largest and most comprehensive technical conference focused on signal processing and its applications</em>
-        </p>
+        ---
 
   - block: features
     content:
