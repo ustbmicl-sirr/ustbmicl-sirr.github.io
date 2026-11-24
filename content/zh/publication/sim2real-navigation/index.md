@@ -1,28 +1,25 @@
 ---
-title: '基于Sim2Real域适应的机器人视觉自主导航方法'
+title: '基于 Sim2Real 域适应的机器人视觉自主导航方法'
 
 authors:
-  - 张梦娇
-  - 段世红
-  - 徐诚
+  - Mengjiao Zhang
+  - Shihong Duan
+  - Cheng Xu
 
-date: '2024-01-01'
-publishDate: '2024-01-01'
+date: '2024-10-30'
+publishDate: '2024-10-30'
 
 publication_types: ['paper-conference']
 
-publication: '*IEEE ISPA 2024*'
+publication: '*IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)*'
 publication_short: 'IEEE ISPA 2024'
 
-abstract: ''
+doi: '10.1109/ISPA63168.2024.00161'
+abstract: "这项工作研究如何通过域适应，将视觉导航策略从仿真环境迁移到真实机器人。"
 
 tags:
   - Sim2Real
   - 自主导航
   - 域适应
   - 机器人视觉
-
-links:
-  - name: 论文
-    url: 'https://github.com/SepMJ/sepmj.github.io.git'
 ---

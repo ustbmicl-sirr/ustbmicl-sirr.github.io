@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: 'Swarm Intelligence Research Lab'
-    description: '群智研究实验室 - 专注于群智能、多机器人系统、分布式协同控制的研究'
+    org_name: 'SIRR - Swarm Intelligence for Robotics Research'
+    description: 'SIRR 课题组：因子图推断 · GraphSwarm 协作涌现 · 离在线多智能体决策 · 可验证 Sim2Real 群体主动导航'
     twitter: ''
   analytics:
     google_analytics: ''
@@ -72,7 +72,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/ustbmicl-sirr/ustbmicl-sirr.github.io'
     content_dir: content
     branch: main
   avatar:

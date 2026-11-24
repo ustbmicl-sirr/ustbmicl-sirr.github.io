@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
 
-        **SIRR (Swarm Intelligence for Robotics Research)** explores swarm intelligence theories and their applications across diverse collaborative scenarios. Our research spans multi-robot systems, UAV swarms, intelligent transportation, distributed sensor networks, and human-robot collaboration, aiming to enable intelligent collective behavior in complex real-world environments.
+        At the University of Science and Technology Beijing, SIRR studies how robots explore together. When each robot sees only part of a building and radio links drop, where should it go next, and who needs its map? We study how robots estimate their surroundings, choose partners, and transfer navigation policies from simulation to hardware.
 
   - block: collection
     content:
@@ -28,26 +28,6 @@ sections:
     design:
       view: card
       columns: '2'
-
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image:
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
   - block: collection
     content:
@@ -67,7 +47,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./project/" cta_text="View All Projects →" %}}
+        {{% cta cta_link="./research/" cta_text="View Research →" %}}
     design:
       columns: '1'
 ---

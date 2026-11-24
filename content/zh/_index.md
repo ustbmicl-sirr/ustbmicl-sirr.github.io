@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
 
-        **SIRR (Swarm Intelligence for Robotics Research)** 探索群智能理论及其在多样化协作场景中的应用。我们的研究涵盖多机器人系统、无人机集群、智能交通、分布式传感器网络、人机协作等领域，旨在复杂真实环境中实现智能集体行为。
+        北京科技大学 SIRR 课题组研究多机器人主动导航。当每台机器人只能看到周围的一小片区域、通信也会中断时，团队如何决定下一步去哪里、与谁交换地图？我们研究机器人如何估计环境、选择协作对象，并将导航策略从仿真迁移到真实平台。
 
   - block: collection
     content:
@@ -28,26 +28,6 @@ sections:
     design:
       view: card
       columns: '2'
-
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image:
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
   - block: collection
     content:
@@ -67,7 +47,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./project/" cta_text="查看所有项目 →" %}}
+        {{% cta cta_link="./research/" cta_text="查看研究方向 →" %}}
     design:
       columns: '1'
 ---

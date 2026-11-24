@@ -7,175 +7,127 @@ sections:
     content:
       title: ""
       text: |
-        > **📢 Latest News** | Our paper accepted by **IEEE ICASSP 2026**!
-        >
-        > **Hierarchical MARL for Task Allocation: Distributed Subtask Selection with Mutual Information**
-        >
-        > 📅 May 3-8, 2026 · 📍 Barcelona, Spain
+        ## Group Focus
+
+        We study **swarm robot active navigation** under cross-domain partial observability: how robots infer structured posteriors over environment, links, roles, and domain parameters from local observations; how they jointly choose executable collaboration edges and actions; and how task–collaboration structure is preserved, adapted, and recovered from simulation to reality.
+
+        > **Factor graphs to understand an uncertain world; GraphSwarm to form collaboration structure; offline–online multi-agent learning for verifiable Sim2Real active navigation.**
 
         ---
+
+        > **News** | ICASSP 2026 · Hierarchical MARL for Task Allocation
+        > Heng Zhang, Shihong Duan, Yadong Wan · Barcelona · [DOI](https://doi.org/10.1109/ICASSP55912.2026.11462585)
 
   - block: features
     content:
-      title: Three Research Directions
-      text: Click cards for details
+      title: Main Work
+      text: Four layers on the current evidence chain (semantic SLAM / VLA are later extensions)
       items:
-        - name: MARL + Robots
+        - name: Structured Inference
+          icon: project-diagram
+          icon_pack: fas
+          description: |
+            **Dynamic probabilistic factor graphs**
+
+            Posterior inference over states, maps, links, roles, and domain parameters—with explicit variables, potentials, and algorithms.
+
+            [Details](#inference)
+        - name: Collaboration Emergence
+          icon: sitemap
+          icon_pack: fas
+          description: |
+            **GraphSwarm**
+
+            Formation, maintenance, failure, and recovery of executable collaboration structures (sensing / communication / task edges).
+
+            [Details](#graphswarm)
+        - name: Offline–Online Decision
           icon: robot
           icon_pack: fas
           description: |
-            **Multi-Robot Active Decision-Making**
+            **DT + Graph-MARL**
 
-            Targeting UAV swarms, warehouse AGVs, and search-and-rescue robots, we study cooperative localization, navigation, and source seeking in communication-limited, dynamic environments.
+            Offline long-horizon behavior priors with online distributed residual adaptation for seeking, allocation, and active exploration.
 
-            **Key Tech**: Factor Graph + Temporal GNN, Coordination Graph Credit Assignment, Safe MARL + PINN, Sim2Real Transfer
-
-            [View Details](#marl-robots)
-        - name: Swarm Intelligence
-          icon: bugs
+            [Details](#decision)
+        - name: Verifiable Transfer
+          icon: exchange-alt
           icon_pack: fas
           description: |
-            **Emergent Collective Behavior**
+            **Sim2Real**
 
-            Inspired by ant colonies and bee swarms, we study how complex collective behaviors emerge from simple local rules, enabling decentralized self-organization.
+            Physics calibration of domain factors; validate transfer across scale, communication, and real platforms—not simulation success alone.
 
-            **Key Tech**: Behavior Tree Modeling, Bio-inspired Algorithms (ACO/PSO), Distributed Consensus Protocols, Mean Field Approximation
-
-            [View Details](#swarm-intelligence)
-        - name: Intelligent IoT
-          icon: network-wired
-          icon_pack: fas
-          description: |
-            **LLM Collaborative Inference**
-
-            Addressing resource constraints on edge devices, we study efficient deployment and privacy-preserving inference of large models in distributed environments.
-
-            **Key Tech**: Model Compression & Quantization, Edge-Cloud Split Inference, Federated Learning, Dynamic Task Offloading
-
-            [View Details](#intelligent-iot)
+            [Details](#sim2real)
 
   - block: markdown
-    id: marl-robots
+    id: inference
     content:
       title: ""
       text: |
         ---
-        ## 🤖 MARL + Robots
+        ## Structured Inference · Dynamic Probabilistic Factor Graphs
 
-        **Multi-Robot Active Collaborative Decision-Making**: Enabling robot swarms to make optimal decisions autonomously in uncertain environments
+        Factor graphs are used for **posterior inference** in partially observed swarms—not as a label for arbitrary relation graphs or attention maps.
 
-        > Core Question: How to enable multiple robots to achieve **safe** and **efficient** collaborative decisions through **distributed learning** in environments with **limited communication**, **partial observations**, and **dynamic changes**?
-
-        | Task | Scenarios | Core Challenges |
-        |:---:|:---|:---|
-        | **Cooperative Localization** | UAV swarms, GPS-denied, cooperative SLAM | Sensor noise · Comm delay · Heterogeneous fusion |
-        | **Collaborative Navigation** | Formation control, warehouse AGV, dynamic avoidance | Safety constraints · Deadlock · Scalability |
-        | **Cooperative Source Seeking** | Gas leak detection, search & rescue, signal tracking | Sparse observations · Exploration-exploitation · Complexity |
-
-        <details>
-        <summary><strong>🔧 Key Technologies</strong></summary>
-
-        - **Factor Graph + Temporal GNN**: Spatio-temporal representation and joint state estimation
-        - **Coordination Graph + Credit Assignment**: Value decomposition via factor graph message passing
-        - **Safe MARL + PINN + CBF**: Physics-constrained learning with safety guarantees
-        - **Sim2Real**: Domain randomization · System ID · Progressive deployment
-
-        </details>
-
-        <details>
-        <summary><strong>📚 References</strong></summary>
-
-        - **phMARL** (TRO 2025): Port-Hamiltonian physics-informed MARL
-        - **GCBF+** (CoRL 2023): GNN + CBF scalable safe control
-        - **MAD-PINN** (2025): PINN for distributed differential games
-
-        </details>
-
-  - block: markdown
-    id: swarm-intelligence
-    content:
-      title: ""
-      text: |
-        ---
-        ## 🐝 Swarm Intelligence
-
-        **Emergent Collective Behavior**: Complex collective behavior emerging from simple individual rules
-
-        > Core Question: How to design simple local rules that enable swarms to exhibit **predictable**, **scalable**, and **robust** collective intelligence **without centralized control**?
-
-        | Task | Scenarios | Core Challenges |
-        |:---:|:---|:---|
-        | **Emergent Behavior** | Aggregation/dispersion, migration, cooperative hunting | Rule design · Predictability · Stability |
-        | **Self-Organization** | Task allocation, formation reconfiguration, load balancing | Local info · Conflict resolution · Convergence |
-        | **Swarm Optimization** | Combinatorial optimization, NAS, path planning | High-dim · Multi-modal · Dynamic objectives |
-
-        <details>
-        <summary><strong>🔧 Key Technologies</strong></summary>
-
-        - **Behavior Trees**: Modular behavior modeling, LLM integration possible
-        - **Bio-inspired Algorithms**: ACO · PSO · Bee algorithms for distributed optimization
-        - **Consensus Protocols**: Decentralized consensus with convergence guarantees
-
-        </details>
-
-        <details>
-        <summary><strong>📚 References</strong></summary>
-
-        - **MRBTP** (AAAI 2025): Multi-robot behavior tree planning
-        - **IKT-BT** (T-Cyber 2025): Indirect knowledge transfer via eavesdropping
-        - **Mean Field MARL**: Mean field approximation for large swarms
-
-        </details>
-
-  - block: markdown
-    id: intelligent-iot
-    content:
-      title: ""
-      text: |
-        ---
-        ## 📡 Intelligent IoT
-
-        **LLM Optimization & Collaborative Inference**: Swarm Intelligence applied to edge computing
-
-        > Core Question: How to achieve **efficient**, **privacy-preserving** LLM inference and collaborative learning on **resource-constrained** edge devices?
-
-        | Task | Scenarios | Core Challenges |
-        |:---:|:---|:---|
-        | **LLM Optimization** | Mobile LLM, embedded AI, real-time inference | Model scale · Compute intensive · Accuracy loss |
-        | **Split Inference** | Edge-cloud collaboration, privacy-sensitive apps | Split decision · Comm bottleneck · Privacy leakage |
-        | **Federated Learning** | Cross-institutional medical AI, distributed robot learning | Non-IID · Comm efficiency · Byzantine attacks |
-
-        <details>
-        <summary><strong>🔧 Key Technologies</strong></summary>
-
-        - **Model Splitting**: Partition large models across devices for collaborative inference
-        - **Edge-Cloud Collaboration**: Dynamic task offloading and resource scheduling
-        - **Federated Learning**: Data stays local, supports heterogeneous data and devices
-
-        </details>
-
-        <details>
-        <summary><strong>🔗 Connection to Swarm Intelligence</strong></summary>
-
-        Intelligent IoT = **Swarm Intelligence of Computing Resources**: Distributed compute nodes achieve efficient inference through collaboration
-
-        </details>
-
-  - block: markdown
-    content:
-      title: Research Philosophy
-      text: |
-        **Swarm Intelligence** is the core concept unifying all three directions:
-
-        | Direction | Swarm Aspect |
+        | Latent | Meaning |
         |:---|:---|
-        | **MARL + Robots** | Swarm Intelligence in the physical world — Multi-robot coordination |
-        | **Swarm Intelligence** | Swarm Intelligence in nature — Emergent behavior |
-        | **Intelligent IoT** | Swarm Intelligence in computing — Collaborative inference |
+        | \(X_t\) | Robot states |
+        | \(M_t\) | Map / targets / environment |
+        | \(C_t\) | Communication reliability |
+        | \(R_t\) | Roles or collaboration intent |
+        | \(\Theta_t\) | Dynamics, observation, and communication domain parameters |
 
-        **Common Characteristics**: Distributed Collaboration · Emergent Intelligence · Scalability · Robustness
+        Related publications: [Factor Graph Guided Deep Reinforcement Learning for Uncertainty Aware SLAM Exploration](/publication/factor-graph-slam/)
 
+  - block: markdown
+    id: graphswarm
+    content:
+      title: ""
+      text: |
         ---
+        ## Collaboration Emergence · GraphSwarm
 
-        For collaboration inquiries, please [contact us](/contact/).
+        The scientific object is **executable collaboration structure**: actions jointly change pose, future observation quality, communication topology, and task collaboration.
+
+        | Graph | Question |
+        |:---|:---|
+        | Sensing \(G^{\mathrm{sen}}\) | Who observes whom / with what quality |
+        | Communication \(G^{\mathrm{com}}\) | Who can reliably talk to whom |
+        | Task \(G^{\mathrm{task}}\) | Who collaborates on which subtasks |
+
+        **Selected outputs**: source navigation with CG-MCTS (IROS 2026, accepted); factor-graph / coordination structures for cooperative localization and tracking (JSAC / IoT-J, 2024)
+
+
+  - block: markdown
+    id: decision
+    content:
+      title: ""
+      text: |
+        ---
+        ## Offline–Online Decision · DT + Graph-MARL
+
+        Decision Transformers supply measurable long-horizon priors; Graph-MARL performs online distributed adaptation under graph constraints—not two parallel theory tracks.
+
+        Related publications: [Subgoal-Based Hierarchical Reinforcement Learning for Multiagent Collaboration](/publication/subgoal-collaboration/) · [Distributed task allocation](/publication/icassp-2026-hierarchical-marl/)
+
+  - block: markdown
+    id: sim2real
+    content:
+      title: ""
+      text: |
+        ---
+        ## Verifiable Transfer · Sim2Real
+
+        PINN / system identification updates domain-related dynamics and observation factors. We prioritize interaction structure and observation/communication factor shifts; dynamics shift enters as physical calibration.
+
+        Related publications: [Domain adaptation for visual navigation](/publication/sim2real-navigation/) · [Learning-Based Multi-Robot Active SLAM: A Conceptual Framework and Survey](/publication/active-slam-survey/)
+
+  - block: markdown
+    content:
+      title: Scope
+      text: |
+        - Graph-Semantic SLAM / VLA, general emergence theory, and industrial IoT are **not** current co-equal scientific problems.
+        - Wireless channels and embedded sensing are **supporting capabilities** for swarm communication and deployment.
+        - Non-triviality comes from the scientific object, mechanisms, and identifiable / transfer bounds—not stacked networks and losses.
 ---

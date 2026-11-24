@@ -2,17 +2,21 @@
 title: 'Hierarchical MARL for Task Allocation: Distributed Subtask Selection with Mutual Information'
 
 authors:
+  - Heng Zhang
   - Shihong Duan
+  - Yadong Wan
 
-date: '2026-01-18'
-publishDate: '2026-01-18'
+date: '2026-05-03'
+publishDate: '2026-05-03'
 
 publication_types: ['paper-conference']
 
-publication: '*2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026)*'
+publication: '*2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, pp. 2466–2470'
 publication_short: 'IEEE ICASSP 2026'
 
-abstract: 'This paper proposes a hierarchical multi-agent reinforcement learning framework for distributed task allocation scenarios. By introducing a mutual information mechanism, we achieve collaborative subtask selection among agents, improving system decision efficiency and task completion quality.'
+abstract: 'This paper proposes a hierarchical multi-agent reinforcement learning framework for distributed task allocation. A mutual information mechanism enables collaborative subtask selection among agents.'
+
+doi: '10.1109/ICASSP55912.2026.11462585'
 
 tags:
   - Multi-Agent Reinforcement Learning
@@ -24,15 +28,11 @@ tags:
 featured: true
 
 links:
-  - name: Conference Website
-    url: 'https://2026.ieeeicassp.org/'
+  - name: DOI
+    url: 'https://doi.org/10.1109/ICASSP55912.2026.11462585'
 
-# Publication status
-# 'Accepted' for accepted papers
-# 'Published' for published papers
-status: 'Accepted'
+status: 'Published'
 
-# Conference details
 event: 'IEEE ICASSP 2026'
 event_url: 'https://2026.ieeeicassp.org/'
 location: 'Barcelona, Spain'
@@ -42,14 +42,14 @@ date_end: '2026-05-08'
 
 ## Publication Details
 
-**Conference**: IEEE ICASSP 2026 (2026 IEEE International Conference on Acoustics, Speech and Signal Processing)
+**Conference**: IEEE ICASSP 2026
 
-**Date**: May 3-8, 2026
+**Date**: May 3–8, 2026
 
 **Location**: Barcelona, Spain
 
-**Status**: ✅ Accepted
+**Pages**: 2466–2470
 
-## About ICASSP
+**DOI**: [10.1109/ICASSP55912.2026.11462585](https://doi.org/10.1109/ICASSP55912.2026.11462585)
 
-ICASSP is the world's largest and most comprehensive technical conference focused on signal processing and its applications. The conference offers a comprehensive technical program presenting all the latest development in research and technology in the industry, attracting thousands of professionals annually.
+**Status**: Published
